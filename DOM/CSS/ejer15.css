@@ -1,0 +1,27 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+
+  li {
+    margin: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    z-index: 1;
+  }
+
+  li:hover .submenu {
+    display: block;
+  }

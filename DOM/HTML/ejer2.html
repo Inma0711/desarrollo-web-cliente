@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+          border: 1px solid black;
+          width: 300px;
+          height: 300px;
+          text-align: center;
+          margin: 0 auto;
+        }
+        table, th, td {
+          border-collapse: collapse;
+        }
+        th, td {
+          border: 1px solid black;
+          padding: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      <table>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+        </tr>
+      </table>
+    
+      <button onclick="cambiarMedidas()">Cambiar Medidas</button>
+      <button onclick="cambiarBorde()">Cambiar Borde</button>
+      <button onclick="cambiarAlineacion()">Cambiar Alineación</button>
+    
+      <script>
+        const table = document.querySelector('table');
+    
+        function cambiarMedidas() {
+          const nuevaAnchura = prompt('Introduce la nueva anchura (px):');
+          const nuevaAltura = prompt('Introduce la nueva altura (px):');
+    
+          if (nuevaAnchura && nuevaAltura) {
+            table.style.width = nuevaAnchura + 'px';
+            table.style.height = nuevaAltura + 'px';
+          }
+        }
+    
+        function cambiarBorde() {
+          const nuevoBorde = prompt('Introduce el nuevo valor de borde (px):');
+    
+          if (nuevoBorde) {
+            table.style.border = nuevoBorde + 'px solid black';
+          }
+        }
+    
+        function cambiarAlineacion() {
+          const alineacionActual = table.style.textAlign;
+          let nuevaAlineacion;
+    
+          if (alineacionActual === 'center') {
+            nuevaAlineacion = 'right';
+          } else if (alineacionActual === 'right') {
+            nuevaAlineacion = 'left';
+          } else {
+            nuevaAlineacion = 'center';
+          }
+    
+          table.style.textAlign = nuevaAlineacion;
+        }
+      </script>
+    
+</body>
+</html>

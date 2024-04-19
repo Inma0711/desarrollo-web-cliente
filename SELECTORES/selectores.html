@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .pakita {
+        background-color: red;
+      }
+
+      .chichio {
+        background-color: blue;
+      }
+
+      .mierda {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Un boton, le pide al usuario la altura y la anchura y se la pone a la tabla
+        Otro boton que cambie el borde al que diga el usuario
+        Otro boton, cada que vez se pulse habra nueva alineacion de la tabla siguiendo este orden, izq, centro, derec. derecha izquierda centro
+        Crea dos clases en CSS: pakita y chichio. Boton que al pulsarlo alterne entre esas clases-->
+
+    <table class="pakita" border="1px" width="200px" height="300px">
+      <tr>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <div style="clear: both">
+      <button onclick="altAnch()">Datos</button>
+      <button onclick="altAnchNuevo()">Datos2</button>
+      <button onclick="borde()">Borde</button>
+      <button onclick="alineacion()">Alinear</button>
+      <button onclick="clase()">Clase</button>
+      <button onclick="fixcell()">Rellenar</button>
+    </div>
+    <script src="selectores.js"></script>
+
+    <!--querySelectorAll = Este me devuelve todo
+    tabla.className sirve para cambiar el atributo de una clase
+  
+    innerHTML = Reemplaza todo el body  document.body.innerHTML = ""; 
+    innerText
+  --></body>
+</html>

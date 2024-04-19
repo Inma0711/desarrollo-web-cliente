@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../JS/ejer8.js" defer></script>
+  
+    <title>Document</title>
+    <style>
+        .cajita{
+            width: 100%;
+            height: 200px;
+            background-color: crimson;
+        }
+        .rojo{
+            background-color: red !important;
+        }
+        .azul{
+            background-color: blue !important;
+        }
+        .verde{
+            background-color: greenyellow !important;
+        }
+
+        .rojo, .azul, .verde{
+            color: gray;
+        }
+    </style>
+  </head>
+  <body>
+    <!--Coloca un div que ocupe toda la pantalla, que tenga una altura de 200px y un color
+de fondo (el que quieras). Crea un programa que permita cambiar el color de ese DIV
+por otros usando:
+a) Indicando el color deseado entre alguna de las opciones de un bloque de botones
+radio (al menos 3 colores para elegir).
+b) Indicando el color deseado entre los elementos de una lista desplegable (al menos 3
+colores para elegir)-->
+
+    <div class="cajita"></div>
+
+    <div>
+        <label>Rojo</label>
+        <input type="radio" value="rojo" name="color">
+
+        <label>Azul</label>
+        <input type="radio" value="azul" name="color">
+
+        <label>verde</label>
+        <input type="radio" value="verde" name="color">
+    </div>
+
+  </body>
+</html>

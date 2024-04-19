@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="miEnlace" href="https://www.google.com" target="_blank">Google</a>
+
+  <button id="mostrarInfo" onclick="mostrarInformacion()">Mostrar URL y Texto</button>
+  <button id="cambiarEnlace" onclick="cambiarEnlace()">Cambiar URL y Texto</button>
+
+  <script>
+    const enlace = document.getElementById("miEnlace");
+
+    function mostrarInformacion() {
+      alert("URL: " + enlace.href + "\nTexto: " + enlace.textContent);
+    }
+
+    function cambiarEnlace() {
+      enlace.href = "https://www.example.com"; // Cambia la URL a la que desees
+      enlace.textContent = "He cambiado";
+    }
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input >
+</body>
+
+    <script>
+        function mostrar() {
+            console.log("Arantxa")
+        }
+
+        window.onload = function(){
+            let timer;
+            let botones = document.querySelectorAll("input[type='button']");
+            let colores = ["red", "green", ]
+            botones[0].onclick = function(){
+                timer = setInterval("mostrar()",1000); //setInterval se forma de funcion y segundos que tu le indiques
+                console.log("Juanma");
+            }   
+
+            botones[2].onclick = function(){
+                clearInterval(timer); //clearInterval para la funcion. La funcion que apliques tienes que escribirse como cadena
+            }
+        }
+    </script>
+</html>

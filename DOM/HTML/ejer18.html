@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+  <div id="monedas">MONEDAS: 0</div>
+  <button id="generarMoneda" onclick="generarMoneda()">Generar Moneda</button>
+  <progress id="progressBar" max="100" value="0"></progress>
+
+  <script>
+let contadorMonedas = 0; //Regristro de monedas
+
+    function generarMoneda() {
+      const monedasDiv = document.getElementById("monedas");
+      const progressBar = document.getElementById("progressBar");
+      const generarMonedaBtn = document.getElementById("generarMoneda");
+
+      generarMonedaBtn.disabled = true; // Bloquear el botón
+      progressBar.value = 0; // Reiniciar la barra de progreso
+     
+
+      function cargarBarra() {
+        if (progressBar.value < progressBar.max) {
+          progressBar.value += 10; // Incrementar la barra de progreso
+          setTimeout(cargarBarra, 500); // Cada 0.5 segundos (500ms)
+        } else {
+          contadorMonedas++; // Incrementar el contador de monedas
+          monedasDiv.textContent = "MONEDAS: " + contadorMonedas;
+          generarMonedaBtn.disabled = false; // Desbloquear el botón
+        }
+      }
+
+      cargarBarra(); // Comenzar la carga de la barra
+    }
+  </script>
+</body>
+</html>

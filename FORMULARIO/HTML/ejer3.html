@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/ejer3.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--3.- Crea un formulario con varios checkbox (pej, aficiones), un textarea y un botón.
+Implementa un programa que, tras pulsar el botón se muestre dentro del textarea todas
+las opciones marcadas.
+b)Mejora el apartado anterior quitando el botón. Ahora cada vez que se marque un
+checkbox, se añadirá al contenido del textarea. Si se desmarca, hay que quitarlo.-->
+
+<form id="miFormulario">
+    <label>
+        <input type="checkbox" name="aficion" value="Deportes"> Deportes
+    </label>
+    <label>
+        <input type="checkbox" name="aficion" value="Música"> Música
+    </label>
+    <label>
+        <input type="checkbox" name="aficion" value="Viajes"> Viajes
+    </label>
+    <label>
+        <input type="checkbox" name="aficion" value="Lectura"> Lectura
+    </label>
+
+    <button type="button">Mostrar Selección</button>
+
+    <textarea id="resultado" rows="4" cols="50"></textarea>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/ejer16.css">
+    <script src="../JS/ejer16.js"></script>
+    <title>Document</title>
+</head>
+<body>
+      <label for="progress">Progress:</label>
+      <progress id="progress" max="100" value="0"></progress>
+      <button id="progressButton" onclick="simulateLoading('progress', 'progressButton')">Cargar</button>
+    
+      <br>
+    
+      <label for="meter">Meter:</label>
+      <meter id="meter" max="100" value="0"></meter>
+      <button id="meterButton" onclick="simulateLoading('meter', 'meterButton')">Cargar</button>
+    
+      
+</body>
+</html>

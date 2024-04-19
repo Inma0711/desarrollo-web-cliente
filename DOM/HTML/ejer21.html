@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #infoDiv {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: #f2f2f2;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 16px;
+            box-shadow: 4px 4px 4px #888888;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.ejemplo.com">Enlace 1</a>
+    <a href="https://www.otroejemplo.com">Enlace 2</a>
+    <a href="https://www.otroenlace.com">Enlace 3</a>
+
+    <div id="infoDiv">Esto es un enlace.</div>
+
+  
+    <script>
+    const infoDiv = document.getElementById("infoDiv");
+
+document.querySelectorAll("a").forEach((enlace) => {
+    enlace.addEventListener("mouseover", (event) => {
+        infoDiv.style.display = "block";
+        infoDiv.textContent = `La URL de este enlace es: ${event.target.href}`;
+    });
+
+    enlace.addEventListener("mouseout", () => {
+        infoDiv.style.display = "none";
+    });
+});
+</script>
+</body>
+</html>

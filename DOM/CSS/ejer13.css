@@ -1,0 +1,9 @@
+.spoiler-content {
+    display: none; /* Inicialmente, oculta el contenido del spoiler */
+  }
+
+  .spoiler-button {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+  }

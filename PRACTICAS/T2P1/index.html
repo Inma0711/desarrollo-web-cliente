@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1 - Trimestre 2</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="jscode/formulario.js" defer></script>
+</head>
+
+<body>
+    <form id="formu">
+        <table>
+            <tr>
+                <td colspan=2 class="cabe"><h3>Datos de Usuario</h3></td>		
+            </tr>
+        
+            <tr>
+                <td class="letras">Nombre:</td>
+                <td><input type="text" name="nombre" placeholder="Introduce tu nombre..."></td>
+            </tr>
+            <tr>
+                <td class="letras">Clave:</td>
+                <td><input type="password" name="clave" placeholder="Introduce una clave"></td>
+            </tr>
+            <tr>
+                <td class="letras">Repite Clave:</td>
+                <td><input type="password" placeholder="Vuelve a introducir al clave"></td>
+            </tr>
+            <tr>
+                <td class="letras">Email:</td>
+                <td><input type="text" name="email" placeholder="Escribe un email válido..."></td>
+            </tr>
+            
+            <tr>
+                <td class="letras">Copia Email:</td>
+                <td><input type="text" name="remail" readonly></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" class="centrados subTitulo">Aficiones</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="centrados">
+                    <input type="checkbox" name="af1" value="Leer"><span>Leer</span>
+                    <input type="checkbox" name="af2" value="Deporte"><span>Deporte</span>
+                    <input type="checkbox" name="af3" value="Musica"><span>Música</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" class="centrados">
+                    <textarea disabled cols=35 id="afiText"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="centrados"><input type="reset" Value="Borrar">
+                <input type="submit" Value="Enviar"></td>
+            </tr>
+            
+        </table>
+
+    </form>	
+   
+</body>
+</html>
